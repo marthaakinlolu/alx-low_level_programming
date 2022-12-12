@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (apha != 'e' && apha != 'q')
+		if (apha[i] != 'e' && apha[i] != 'q')
 		{
 			putchar(apha[i]);
 		}
