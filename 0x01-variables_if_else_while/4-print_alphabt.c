@@ -12,9 +12,9 @@ int main(void)
 	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i <24; i++)
+	for (i = 0; i < 24; i++)
 	{
-		if (i != 4 && i !=16)
+		if (i != 4 && i != 16)
 		{
 			putchar(alpha[i]);
 		}
