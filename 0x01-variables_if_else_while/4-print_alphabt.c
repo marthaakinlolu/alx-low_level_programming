@@ -10,8 +10,9 @@
 int main(void)
 {
 	char apha[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (apha = 'a'; apha <= 'z'; apha++)
+	for (i = 0; i < 26; i++)
 	{
 		if (apha != 'e' && apha != 'q')
 		{
