@@ -10,7 +10,7 @@ int main(void)
 	char apha[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 26; i > -1; i--)
+	for (i = 25; i > -1; i--)
 	{
 		putchar(apha[i]);
 	}
