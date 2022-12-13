@@ -8,7 +8,14 @@
  */
 int main(void)
 {
-	printf("_putchar");
+	char alx[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	unsigned int c;
+
+	for (c = 0; c < sizeof(alx); c++)
+	{
+		putchar(alx[c]);
+	}
+	putchar('\n');
 
 	return (0);
 }
