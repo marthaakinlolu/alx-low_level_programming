@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Write a program that prints _putchar.
@@ -9,14 +8,15 @@
  */
 int main(void)
 {
-	char alx[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	unsigned int c;
-
-	for (c = 0; c < sizeof(alx); c++)
-	{
-		putchar(alx[c]);
-	}
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
