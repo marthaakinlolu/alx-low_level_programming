@@ -7,12 +7,11 @@
  * Fizz for multiples of 3
  * Buss for multiples of 5
  * FizzBuss for multiples of both
- *
  * Return: 0
  */
 int main(void)
 {
-	int i
+	int i;
 
 		for (i = 1; i <= 100; i++)
 		{
