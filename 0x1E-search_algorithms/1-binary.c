@@ -10,40 +10,26 @@
  * @value: value to search in
  * Return: index of the number
  */
-int binary_search(int *array, size_t size, int value) {
-  // Check if the array is NULL
-  if (array == NULL) {
-    return -1;
-  }
+int binary_search(int *array, size_t size, int value)
+{
+	int i, left, right;
 
-  // Initialize the start and end indexes
-  size_t start = 0;
-  size_t end = size - 1;
+	if (!array)
+		return (-1);
+	for (left = 0, right = (int)size - 1; right >= left;)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
 
-  // Loop until the start index is greater than or equal to the end index
-  while (start <= end) {
-    // Print the array being searched
-    printf("Searching in array: %d\n", array[start:end + 1]);
-
-    // Calculate the middle index
-    size_t mid = (start + end) / 2;
-
-    // If the value is found, return the index
-    if (array[mid] == value) {
-      return mid;
-    }
-
-    // If the value is less than the middle value, search the left subarray
-    else if (value < array[mid]) {
-      end = mid - 1;
-    }
-
-    // If the value is greater than the middle value, search the right subarray
-    else {
-      start = mid + 1;
-    }
-  }
-
-  // The value was not found
-  return -1;
+		i = left + (right - left) / 2;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
+		else
+			left = i + 1;
+	}
+	return (-1);
 }
